@@ -1,0 +1,67 @@
+mar. 11, 2025 2:48:48 PM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202503102046.sql
+mar. 11, 2025 2:48:48 PM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202503111006.sql
+mar. 11, 2025 2:48:48 PM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202503111030.sql
+mar. 11, 2025 2:48:48 PM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202503111040.sql
+mar. 11, 2025 2:48:49 PM liquibase.changelog
+INFO: Creating database history table with name: board.databasechangelog
+mar. 11, 2025 2:48:50 PM liquibase.changelog
+INFO: Reading from board.databasechangelog
+mar. 11, 2025 2:48:52 PM liquibase.lockservice
+INFO: Successfully acquired change log lock
+mar. 11, 2025 2:48:52 PM liquibase.command
+INFO: Using deploymentId: 1715332623
+mar. 11, 2025 2:48:52 PM liquibase.changelog
+INFO: Reading from board.databasechangelog
+Running Changeset: db/changelog/migrations/db.changelog-202503102046.sql::202503102046::marcio
+mar. 11, 2025 2:48:53 PM liquibase.changelog
+INFO: Custom SQL executed
+mar. 11, 2025 2:48:53 PM liquibase.changelog
+INFO: ChangeSet db/changelog/migrations/db.changelog-202503102046.sql::202503102046::marcio ran successfully in 752ms
+Running Changeset: db/changelog/migrations/db.changelog-202503111006.sql::202503111006::marcio
+mar. 11, 2025 2:48:54 PM liquibase.changelog
+INFO: Custom SQL executed
+mar. 11, 2025 2:48:54 PM liquibase.changelog
+INFO: ChangeSet db/changelog/migrations/db.changelog-202503111006.sql::202503111006::marcio ran successfully in 844ms
+Running Changeset: db/changelog/migrations/db.changelog-202503111030.sql::202503111030::marcio
+mar. 11, 2025 2:48:55 PM liquibase.changelog
+INFO: Custom SQL executed
+mar. 11, 2025 2:48:55 PM liquibase.changelog
+INFO: ChangeSet db/changelog/migrations/db.changelog-202503111030.sql::202503111030::marcio ran successfully in 823ms
+Running Changeset: db/changelog/migrations/db.changelog-202503111040.sql::202503111040::marcio
+mar. 11, 2025 2:48:56 PM liquibase.changelog
+INFO: Custom SQL executed
+mar. 11, 2025 2:48:56 PM liquibase.changelog
+INFO: ChangeSet db/changelog/migrations/db.changelog-202503111040.sql::202503111040::marcio ran successfully in 757ms
+
+UPDATE SUMMARY
+Run:                          4
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:            4
+
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: UPDATE SUMMARY
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: Run:                          4
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: Previously run:               0
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: Filtered out:                 0
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: -------------------------------
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: Total change sets:            4
+mar. 11, 2025 2:48:56 PM liquibase.util
+INFO: Update summary generated
+mar. 11, 2025 2:48:56 PM liquibase.command
+INFO: Update command completed successfully.
+Liquibase: Update has been successful. Rows affected: 4
+mar. 11, 2025 2:48:56 PM liquibase.lockservice
+INFO: Successfully released change log lock
+mar. 11, 2025 2:48:56 PM liquibase.command
+INFO: Command execution complete
