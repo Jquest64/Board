@@ -114,7 +114,7 @@ public class BoardMenu {
             var column = new BoardColumnQueryService(connection).findById(selectedColumn);
             column.ifPresent(co -> {
                     System.out.printf("Coluna %s tipo %s\n", co.getName(), co.getKind());
-                    co.getCards().forEach(ca -> System.out.printf("Card %s - %s\n Descrição: %s", ca.getId(), ca.getTitle(), ca.getDescription()));
+                    co.getCards().forEach(ca -> System.out.printf("Card %s - %s\n Descrição: %s\n", ca.getId(), ca.getTitle(), ca.getDescription()));
             });
         }
     }
@@ -127,7 +127,7 @@ public class BoardMenu {
             new CardQueryService(connection).findById(selectedCardId)
                     .ifPresentOrElse(
                             c -> {
-                                System.out.printf("Card %s - %s.n", c.id(), c.title());
+                                System.out.printf("Card %s - %s\n", c.id(), c.title());
                                 System.out.printf("Descrição:  %s\n", c.description());
                                 System.out.println(c.blocked() ? "Está bloqueado. Motivo: " + c.blockReason() : "Não está bloqueado");
                                 System.out.printf("Já foi bloqueado %s vezes\n", c.blocksAmount());
