@@ -14,7 +14,6 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import static br.com.dio.persistence.config.ConnectionConfig.getConnection;
-import static br.com.dio.persistence.entity.BoardColumnKindEnum.INITIAL;
 
 @AllArgsConstructor
 public class BoardMenu {
@@ -91,10 +90,24 @@ public class BoardMenu {
         }
     }
 
-    private void blockCard() {
+    private void blockCard() throws SQLException {
+        System.out.println("Informe o id do card que será bloqueado");
+        var cardId = scanner.nextLong();
+
+        System.out.println("Informe o motivo do bloqueio do card");
+        var reason = scanner.next();
+        var boardColumnsInfo = entity.getBoardColumns().stream()
+                .map(bc -> new BoardColumnInfoDTO(bc.getId(), bc.getOrder(), bc.getKind()))
+                .toList();
+
+        try (var connection = getConnection()) {
+            new CardService(connection).block(cardId, reason,boardColumnsInfo);
+        } catch (RuntimeException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
-    private void unblockCard() {
+    private void unblockCard() throws SQLException {
     }
 
     private void cancelCard() throws SQLException {
