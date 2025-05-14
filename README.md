@@ -1,7 +1,7 @@
 # 🏗️ Board de Tarefas
 
 ## 🛠️ Sobre o Projeto - Board
-Este projeto faz parte de um **desafio de projeto** da plataforma **[DIO](https://www.dio.me/)** e tem como objetivo desenvolver um sistema de **gerenciamento de tarefas** inspirado no Trello.  
+Este projeto faz parte de um **desafio de projeto** da plataforma **[DIO](https://www.dio.me/)** e tem como objetivo desenvolver um sistema de **gerenciamento de tarefas**.  
 
 O sistema permite a criação de **boards**, com colunas organizadas de forma configurável, e a movimentação de **cards**, garantindo a **persistência dos dados** em um banco **MySQL**, utilizando **Liquibase** para versionamento e migração.  
 
